@@ -164,3 +164,23 @@ console.log("--includes--")
 // Revisar la documentacion
 let resultado_includes = nombre_planetas.includes("Tierra", 0);
 console.log(resultado_includes);
+
+// Otra anotacion para las funciones flechas (Cuando se recibe solo 1 parametro)
+
+let calculos = n1 => {
+    console.log("El valor es: " + n1)
+}
+
+calculos(4)
+
+
+// Otros ejemplos de forEach
+
+let iterador = (valor) => {
+    console.log ("Elemento", valor);
+}
+
+console.log("ITERACION PLANETAS")
+planetas.forEach(iterador);
+console.log("ITERACION NOMBRE PLANETAS");
+nombre_planetas.forEach(iterador);
